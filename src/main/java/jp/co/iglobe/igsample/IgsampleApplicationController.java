@@ -10,7 +10,7 @@ public class IgsampleApplicationController {
 	@GetMapping("/top")
 	public String top(Model model) {
 		model.addAttribute("message", "hello thymeleaf");
-		return "top";
+		return "index";
 	}
 
 

@@ -1,6 +1,7 @@
 var {withRouter, BrowserRouter, Route, NavLink} = window.ReactRouterDOM;
 var registMainComponent = RegistMainComponent;
 var homeComponent = HomeComponent;
+var hokokuListComponent = HokokuListComponent;
 ReactDOM.render(
 	(<div>
 		{/* React-Routerで制御 */}
@@ -17,13 +18,17 @@ ReactDOM.render(
 			        <NavLink className="nav-link" to='/top'>Home</NavLink>
 			      </li>
 			      <li className="nav-item">
-			      <NavLink className="nav-link" to='/top/hokoku/regist'>作業報告</NavLink>
+  			      <NavLink className="nav-link" to='/top/hokoku/regist'>作業報告</NavLink>
+			      </li>
+			      <li className="nav-item">
+			      <NavLink className="nav-link" to='/top/hokoku/list'>作業一覧</NavLink>
 			      </li>
 			    </ul>
 			  </div>
 			</nav>
 
 			<Route exact path="/top/hokoku/regist" component={registMainComponent} />
+			<Route exact path="/top/hokoku/list" component={hokokuListComponent} />
 			<Route exact path="/top" component={homeComponent} />
 		</div>
 		</BrowserRouter>
