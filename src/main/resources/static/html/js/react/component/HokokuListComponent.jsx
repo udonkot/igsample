@@ -67,7 +67,9 @@ class HokokuListComponent extends React.Component {
                         <td>{item.userName}</td>
                         <td>{item.fromDate}</td>
                         <td>{item.toDate}</td>
-                        <td>{item.content}</td>
+                        <td>
+                          <textarea style={{borderWidth: '0',backgroundColor: 'transparent' }} rows="20" cols="100" defaultValue={item.content} />
+                        </td>
                       </tr>
                     ))}
 
