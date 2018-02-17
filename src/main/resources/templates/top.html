@@ -1,68 +1,86 @@
 <!doctype html>
 <html xmlns:th="http://www.thymeleaf.org">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Hello Thymeleaf</title>
+<head>
+<meta charset="UTF-8" />
+<title>Hello Thymeleaf</title>
 <!--         <script src="http://fb.me/react-0.13.3.js"></script> -->
 <!--         <script src="http://fb.me/JSXTransformer-0.13.3.js"></script> -->
-    </head>
-    <body>
-    <div id="container"></div>
+</head>
+<body>
+	<div id="container"></div>
+
+	<!-- BootstrapのCSS読み込み -->
+	<link href="/css/bootstrap.min.css" rel="stylesheet" />
+
+	<!-- ライブラリ -->
+	<script src="https://www.promisejs.org/polyfills/promise-7.0.4.min.js"></script>
+	<script src="/js/lib/fetch.js"></script>
+
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/react/15.5.0/react.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/react/15.5.0/react-dom.js"></script>
+	<!--     <script -->
+	<!--             src="https://cdnjs.cloudflare.com/ajax/libs/react/16.2.0/cjs/react.production.min.js"></script> -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.10.3/babel.min.js"></script>
+
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/react-router/4.1.2/react-router.js"></script>
+
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/react-router-dom/4.1.2/react-router-dom.js"></script>
 
 
-    <!-- ライブラリ -->
-    <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/react/15.5.0/react.js"></script>
-    <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/react/15.5.0/react-dom.js"></script>
-<!--     <script -->
-<!--             src="https://cdnjs.cloudflare.com/ajax/libs/react/16.2.0/cjs/react.production.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.10.3/babel.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router/4.1.2/react-router.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router-dom/4.1.2/react-router-dom.js"></script>
-
-
-    <!-- コンポーネント -->
-    <script type="text/babel" src="/js/react/component/FooterComponent.jsx"></script>
-    <script type="text/babel" src="/js/react/component/RegistCompletedComponent.jsx"></script>
-    <script type="text/babel" src="/js/react/component/RegistFormComponent.jsx"></script>
-    <script type="text/babel" src="/js/react/component/RegistMainComponent.jsx"></script>
-    <script type="text/babel" src="/js/react/component/RegistConfirmComponent.jsx"></script>
-    <script type="text/babel" src="/js/react/component/TitleComponent.jsx"></script>
-    <script type="text/babel" src="/js/react/component/TbodyComponent.jsx"></script>
-    <script type="text/babel" src="/js/react/component/TdComponent.jsx"></script>
-    <script type="text/babel" src="/js/react/component/TheadComponent.jsx"></script>
-    <script type="text/babel" src="/js/react/component/TrComponent.jsx"></script>
-    <script type="text/babel" src="/js/react/component/InputComponent.jsx"></script>
-    <script type="text/babel" src="/js/react/component/InputRadioComponent.jsx"></script>
-    <script type="text/babel" src="/js/react/component/InputButtonComponent.jsx"></script>
+	<!-- コンポーネント -->
+	<script type="text/babel" src="/js/react/component/CardComponent.jsx"></script>
+	<script type="text/babel"
+		src="/js/react/component/Question1Component.jsx"></script>
+	<script type="text/babel"
+		src="/js/react/component/Question2Component.jsx"></script>
+	<script type="text/babel" src="/js/react/component/FooterComponent.jsx"></script>
+	<script type="text/babel"
+		src="/js/react/component/RegistCompletedComponent.jsx"></script>
+	<script type="text/babel"
+		src="/js/react/component/RegistFormComponent.jsx"></script>
+	<script type="text/babel"
+		src="/js/react/component/RegistMainComponent.jsx"></script>
+	<script type="text/babel"
+		src="/js/react/component/RegistConfirmComponent.jsx"></script>
+	<script type="text/babel" src="/js/react/component/TitleComponent.jsx"></script>
+	<script type="text/babel" src="/js/react/component/TbodyComponent.jsx"></script>
+	<script type="text/babel" src="/js/react/component/TdComponent.jsx"></script>
+	<script type="text/babel" src="/js/react/component/TheadComponent.jsx"></script>
+	<script type="text/babel" src="/js/react/component/TrComponent.jsx"></script>
+	<script type="text/babel" src="/js/react/component/InputComponent.jsx"></script>
+	<script type="text/babel"
+		src="/js/react/component/InputRadioComponent.jsx"></script>
+	<script type="text/babel"
+		src="/js/react/component/InputButtonComponent.jsx"></script>
 
 
-    <!-- 制御用スクリプト -->
-    <script type="text/jsx;"
-            src="/js/react/app.js"></script>
+	<!-- 制御用スクリプト -->
+	<script type="text/jsx;" src="/js/react/app.js"></script>
 
 
-<!--         <h1 th:text="${message}"></h1> -->
-<!--         <br/> -->
-<!--         <div id="app"></div> -->
+	<!--         <h1 th:text="${message}"></h1> -->
+	<!--         <br/> -->
+	<!--         <div id="app"></div> -->
 
 
-<!--     <script type="text/jsx"> -->
-<!--      var HelloWorld = React.createClass({ -->
-<!--        // <HelloWorld />をレンダリング（表示） -->
-<!--        render: function() { -->
-<!--          return ( -->
-<!--            <p>Hello!World!</p> -->
-<!--          ); -->
-<!--        } -->
-<!--      }); -->
+	<!--     <script type="text/jsx"> -->
+	<!--      var HelloWorld = React.createClass({ -->
+	<!--        // <HelloWorld />をレンダリング（表示） -->
+	<!--        render: function() { -->
+	<!--          return ( -->
+	<!--            <p>Hello!World!</p> -->
+	<!--          ); -->
+	<!--        } -->
+	<!--      }); -->
 
-<!--      // id='app'に<HelloWorld />を埋め込む（マウント） -->
-<!--      var m = React.render(<HelloWorld />, document.getElementById('app')); -->
-<!--     </script> -->
+	<!--      // id='app'に<HelloWorld />を埋め込む（マウント） -->
+	<!--      var m = React.render(<HelloWorld />, document.getElementById('app')); -->
+	<!--     </script> -->
 
-    </body>
+</body>
 </html>

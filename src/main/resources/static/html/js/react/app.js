@@ -2,6 +2,8 @@ var {withRouter, BrowserRouter, Route, NavLink} = window.ReactRouterDOM;
 var registMainComponent = RegistMainComponent;
 var homeComponent = HomeComponent;
 var hokokuListComponent = HokokuListComponent;
+var question1Component = Question1Component;
+var question2Component = Question2Component;
 ReactDOM.render(
 	(<div>
 		{/* React-Routerで制御 */}
@@ -22,6 +24,12 @@ ReactDOM.render(
 			      </li>
 			      <li className="nav-item">
 			      <NavLink className="nav-link" to='/top/hokoku/list'>作業一覧</NavLink>
+			      </li>
+			      <li className="nav-item">
+			      <NavLink className="nav-link" to='/top/question/1'>作業一覧</NavLink>
+			      </li>
+			      <li className="nav-item">
+			      <NavLink className="nav-link" to='/top/question/2'>作業一覧</NavLink>
 			      </li>
 			    </ul>
 			  </div>
