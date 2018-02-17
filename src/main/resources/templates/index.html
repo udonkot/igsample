@@ -1,93 +1,94 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-	<meta charset="utf-8"/>
-	<meta name="viewport"
-		content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-	<meta name="theme-color" content="#000000"/>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="theme-color" content="#000000" />
 <!--     <script type="text/javascript" src="./js/react.js"/> -->
 <!--     <script type="text/javascript" src="./js/ReactDOM.js"/> -->
 <!--     <script type="text/javascript" src="./js/Route.js"/> -->
 <!-- 	<script type="text/javascript" src="./js/Router.js"/> -->
 <!--     <script type="text/javascript" src="./js/app.js"/> -->
-	<title>React App</title>
+<title>React App</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
 
 </head>
 <body>
 
 
-    <!-- ライブラリ -->
-    <script
-            src="/html/js/react/lib/react.js"></script>
-    <script
-            src="/html/js/react/lib/react-dom.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.10.3/babel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router/4.1.2/react-router.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router-dom/4.1.2/react-router-dom.js"></script>
+	<!-- ライブラリ -->
+	<script src="/html/js/react/lib/react.js"></script>
+	<script src="/html/js/react/lib/react-dom.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.10.3/babel.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/react-router/4.1.2/react-router.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/react-router-dom/4.1.2/react-router-dom.js"></script>
 
-   <script src="http://fb.me/JSXTransformer-0.12.1.js"></script>
-<script src="https://www.promisejs.org/polyfills/promise-7.0.4.min.js"></script>
-    <script src="/html/js/react/lib/fetch.js"></script>
+	<script src="http://fb.me/JSXTransformer-0.12.1.js"></script>
+	<script src="https://www.promisejs.org/polyfills/promise-7.0.4.min.js"></script>
+	<script src="/html/js/react/lib/fetch.js"></script>
 
-    <!-- コンポーネント -->
-	<script type="text/babel" src="/js/react/component/CardComponent.jsx"></script>
+	<!-- コンポーネント -->
 	<script type="text/babel"
-		src="/js/react/component/Question1Component.jsx"></script>
+		src="/html/js/react/component/CardComponent.jsx"></script>
 	<script type="text/babel"
-		src="/js/react/component/Question2Component.jsx"></script>
-    <script type="text/babel"
-            src="/html/js/react/component/HomeComponent.jsx"></script>
-    <script type="text/babel"
-            src="/html/js/react/component/HokokuListComponent.jsx"></script>
-    <script type="text/babel"
-            src="/html/js/react/component/InputComponent.jsx"></script>
-    <script type="text/babel"
-            src="/html/js/react/component/TextAreaComponent.jsx"></script>
-    <script type="text/babel"
-            src="/html/js/react/component/RegistConfirmComponent.jsx"></script>
+		src="/html/js/react/component/Question1Component.jsx"></script>
+	<script type="text/babel"
+		src="/html/js/react/component/Question2Component.jsx"></script>
+	<script type="text/babel"
+		src="/html/js/react/component/HomeComponent.jsx"></script>
+	<script type="text/babel"
+		src="/html/js/react/component/HokokuListComponent.jsx"></script>
+	<script type="text/babel"
+		src="/html/js/react/component/InputComponent.jsx"></script>
+	<script type="text/babel"
+		src="/html/js/react/component/TextAreaComponent.jsx"></script>
+	<script type="text/babel"
+		src="/html/js/react/component/RegistConfirmComponent.jsx"></script>
 
-    <script type="text/babel"
-            src="/html/js/react/component/RegistCompletedComponent.jsx"></script>
+	<script type="text/babel"
+		src="/html/js/react/component/RegistCompletedComponent.jsx"></script>
 
-    <script type="text/babel"
-            src="/html/js/react/component/RegistFormComponent.jsx"></script>
+	<script type="text/babel"
+		src="/html/js/react/component/RegistFormComponent.jsx"></script>
 
-    <script type="text/babel"
-            src="/html/js/react/component/RegistMainComponent.jsx"></script>
-    <script type="text/babel"
-            src="/html/js/react/component/FooterComponent.jsx"></script>
+	<script type="text/babel"
+		src="/html/js/react/component/RegistMainComponent.jsx"></script>
+	<script type="text/babel"
+		src="/html/js/react/component/FooterComponent.jsx"></script>
 
-    <!-- 制御用スクリプト -->
-    <script type="text/jsx;"
-            src="/html/js/react/app.js"></script>
+	<!-- 制御用スクリプト -->
+	<script type="text/jsx;" src="/html/js/react/app.js"></script>
 
-<!-- </body> -->
-    <div id="container" class="container"></div>
-
+	<!-- </body> -->
+	<div id="container" class="container"></div>
 
 
 
-<!-- 	<div id="hoge"> -->
-<!-- 		<div id="search"> -->
-<!-- 			<label>研修日</label> <input type="text" name="ymd" /> <input -->
-<!-- 				type="button" name="search" value="検索" /> <br /> -->
-<!-- 			<br /> -->
-<!-- 		</div> -->
-<!-- 		<div id="list"> -->
-<!-- 			<label>入力フィールド1</label> -->
-<!-- 			<textarea id="textarea1"></textarea> -->
-<!-- 			<br /> <label>入力フィールド2</label> -->
-<!-- 			<textarea id="textarea1"></textarea> -->
-<!-- 			<br /> -->
-<!-- 			<br /> -->
-<!-- 			<button name="update">更新</button> -->
-<!-- 			<button name="reset">リセット</button> -->
-<!-- 		</div> -->
-<!-- 	</div> -->
+
+	<!-- 	<div id="hoge"> -->
+	<!-- 		<div id="search"> -->
+	<!-- 			<label>研修日</label> <input type="text" name="ymd" /> <input -->
+	<!-- 				type="button" name="search" value="検索" /> <br /> -->
+	<!-- 			<br /> -->
+	<!-- 		</div> -->
+	<!-- 		<div id="list"> -->
+	<!-- 			<label>入力フィールド1</label> -->
+	<!-- 			<textarea id="textarea1"></textarea> -->
+	<!-- 			<br /> <label>入力フィールド2</label> -->
+	<!-- 			<textarea id="textarea1"></textarea> -->
+	<!-- 			<br /> -->
+	<!-- 			<br /> -->
+	<!-- 			<button name="update">更新</button> -->
+	<!-- 			<button name="reset">リセット</button> -->
+	<!-- 		</div> -->
+	<!-- 	</div> -->
 </body>
 </html>
 

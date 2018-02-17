@@ -26,10 +26,10 @@ ReactDOM.render(
 			      <NavLink className="nav-link" to='/top/hokoku/list'>作業一覧</NavLink>
 			      </li>
 			      <li className="nav-item">
-			      <NavLink className="nav-link" to='/top/question/1'>作業一覧</NavLink>
+			      <NavLink className="nav-link" to='/top/question/1'>Question1</NavLink>
 			      </li>
 			      <li className="nav-item">
-			      <NavLink className="nav-link" to='/top/question/2'>作業一覧</NavLink>
+			      <NavLink className="nav-link" to='/top/question/2'>Question2</NavLink>
 			      </li>
 			    </ul>
 			  </div>
@@ -38,6 +38,8 @@ ReactDOM.render(
 			<Route exact path="/top/hokoku/regist" component={registMainComponent} />
 			<Route exact path="/top/hokoku/list" component={hokokuListComponent} />
 			<Route exact path="/top" component={homeComponent} />
+			<Route exact path="/top/question/1" component={question1Component} />
+			<Route exact path="/top/question/2" component={question2Component} />
 		</div>
 		</BrowserRouter>
 		<br />
